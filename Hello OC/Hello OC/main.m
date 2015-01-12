@@ -130,6 +130,20 @@ void testReadJPGFile() {
   }
 }
 
+void testBlock() {
+  typedef double (^DemoBlock)(void);
+  static double a = 10, b = 20;
+  DemoBlock demo = ^(void){return a * b;};
+  NSLog(@"%f", demo());
+  a = 20;
+  b = 50;
+  NSLog(@"%f", demo());
+  
+  typedef double (^DemoBlock2)(double c, double d);
+  DemoBlock2 demo2 = ^(double c, double d){return c * d;};
+  NSLog(@"%f, %f", demo2(2, 5), demo2(4, 3));
+}
+
 int main (int argc, const char *argv[]) {
   //testBOOL();
   //testFileIndrection();
@@ -139,6 +153,7 @@ int main (int argc, const char *argv[]) {
   //testMutableString();
   //testArray();
   //testDictionary();
-  testReadJPGFile();
+  //testReadJPGFile();
+  testBlock();
   return 0;
 }
