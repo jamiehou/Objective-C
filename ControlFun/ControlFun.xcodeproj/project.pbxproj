@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		187A36061A7011BC0044D87F /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 187A36051A7011BC0044D87F /* button.png */; };
 		FAB314981A6F85CA00FE8014 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB314971A6F85CA00FE8014 /* main.m */; };
 		FAB3149B1A6F85CA00FE8014 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3149A1A6F85CA00FE8014 /* AppDelegate.m */; };
 		FAB3149E1A6F85CA00FE8014 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3149D1A6F85CA00FE8014 /* ViewController.m */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		187A36051A7011BC0044D87F /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		FAB314921A6F85CA00FE8014 /* ControlFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControlFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB314961A6F85CA00FE8014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAB314971A6F85CA00FE8014 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		FAB314951A6F85CA00FE8014 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				187A36051A7011BC0044D87F /* button.png */,
 				FAB314BB1A6F86BB00FE8014 /* control.png */,
 				FAB314961A6F85CA00FE8014 /* Info.plist */,
 				FAB314971A6F85CA00FE8014 /* main.m */,
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB314A11A6F85CA00FE8014 /* Main.storyboard in Resources */,
+				187A36061A7011BC0044D87F /* button.png in Resources */,
 				FAB314A61A6F85CA00FE8014 /* LaunchScreen.xib in Resources */,
 				FAB314A31A6F85CA00FE8014 /* Images.xcassets in Resources */,
 				FAB314BC1A6F86BB00FE8014 /* control.png in Resources */,
@@ -418,6 +422,7 @@
 				FAB314B71A6F85CA00FE8014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAB314B81A6F85CA00FE8014 /* Build configuration list for PBXNativeTarget "ControlFunTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +431,7 @@
 				FAB314BA1A6F85CA00FE8014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
