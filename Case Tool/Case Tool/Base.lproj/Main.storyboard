@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,37 +17,90 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmP-tu-3hd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmP-tu-3hd">
                                 <rect key="frame" x="53" y="162" width="494" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Ipv-I5-XHM">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                    </constraint>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter message here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ArQ-hv-EpR">
-                                <rect key="frame" x="53" y="82" width="494" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter message here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ArQ-hv-EpR">
+                                <rect key="frame" x="53" y="82" width="494" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JQJ-w5-KuJ">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uxb-Qp-gn2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uxb-Qp-gn2">
                                 <rect key="frame" x="261" y="240" width="78" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bSV-VE-jfq">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
+                                </constraints>
                                 <state key="normal" title="UpperCase">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                </variation>
                                 <connections>
                                     <action selector="uppercase" destination="BYZ-38-t0r" eventType="touchUpInside" id="VeF-BY-Bto"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzw-tX-fHg">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzw-tX-fHg">
                                 <rect key="frame" x="261" y="323" width="78" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eoa-Yw-fGz">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
+                                </constraints>
                                 <state key="normal" title="LowerCase">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                </variation>
                                 <connections>
                                     <action selector="lowercase" destination="BYZ-38-t0r" eventType="touchUpInside" id="iMC-gS-9fm"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ArQ-hv-EpR" firstAttribute="centerX" secondItem="pmP-tu-3hd" secondAttribute="centerX" id="AFa-vv-ph8"/>
+                            <constraint firstItem="ArQ-hv-EpR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="AkS-o5-Ne8"/>
+                            <constraint firstAttribute="centerX" secondItem="vzw-tX-fHg" secondAttribute="centerX" id="C4l-HF-ZoN"/>
+                            <constraint firstItem="pmP-tu-3hd" firstAttribute="top" secondItem="ArQ-hv-EpR" secondAttribute="bottom" constant="30" id="Din-YM-BQk"/>
+                            <constraint firstItem="ArQ-hv-EpR" firstAttribute="centerX" secondItem="Uxb-Qp-gn2" secondAttribute="centerX" id="IN4-oc-CTO"/>
+                            <constraint firstItem="ArQ-hv-EpR" firstAttribute="height" secondItem="pmP-tu-3hd" secondAttribute="height" id="SKq-tB-COc"/>
+                            <constraint firstItem="vzw-tX-fHg" firstAttribute="top" secondItem="Uxb-Qp-gn2" secondAttribute="bottom" constant="30" id="VIe-kg-Djk"/>
+                            <constraint firstItem="ArQ-hv-EpR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="aX9-M2-QPK"/>
+                            <constraint firstAttribute="centerX" secondItem="ArQ-hv-EpR" secondAttribute="centerX" id="fOb-cU-knK"/>
+                            <constraint firstItem="ArQ-hv-EpR" firstAttribute="centerX" secondItem="vzw-tX-fHg" secondAttribute="centerX" id="n4y-YN-FgH"/>
+                            <constraint firstAttribute="centerX" secondItem="Uxb-Qp-gn2" secondAttribute="centerX" id="rTK-W9-fLp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ArQ-hv-EpR" secondAttribute="trailing" constant="50" id="vTd-Zl-cKc"/>
+                            <constraint firstAttribute="centerX" secondItem="pmP-tu-3hd" secondAttribute="centerX" id="xHa-FC-6ZG"/>
+                            <constraint firstItem="Uxb-Qp-gn2" firstAttribute="top" secondItem="pmP-tu-3hd" secondAttribute="bottom" constant="30" id="zXw-BZ-XZx"/>
+                        </constraints>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="Uxb-Qp-gn2"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="input" destination="ArQ-hv-EpR" id="MEm-6M-t9r"/>

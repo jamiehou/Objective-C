@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,8 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvR-B5-HOj">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvR-B5-HOj">
                                 <rect key="frame" x="124" y="343" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="H6R-OI-Onn"/>
+                                    <constraint firstAttribute="width" constant="100" id="eTF-R4-MTw"/>
+                                </constraints>
                                 <state key="normal" title="Left">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -25,8 +30,12 @@
                                     <action selector="updateLabel:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xKi-QN-SNo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zoe-hj-5MM">
-                                <rect key="frame" x="303" y="343" width="37" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zoe-hj-5MM">
+                                <rect key="frame" x="434" y="280" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1Cs-28-ysz"/>
+                                    <constraint firstAttribute="width" constant="100" id="S82-rv-g3q"/>
+                                </constraints>
                                 <state key="normal" title="Right">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -34,7 +43,7 @@
                                     <action selector="updateLabel:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JFB-Wu-3di"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uJ-P6-UIT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uJ-P6-UIT">
                                 <rect key="frame" x="97" y="146" width="235" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -42,6 +51,18 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5uJ-P6-UIT" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="32e-iX-ck0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zoe-hj-5MM" secondAttribute="trailing" constant="50" id="7NE-SN-zRX"/>
+                            <constraint firstAttribute="centerY" secondItem="YvR-B5-HOj" secondAttribute="centerY" id="SVd-8F-9zP"/>
+                            <constraint firstAttribute="centerX" secondItem="5uJ-P6-UIT" secondAttribute="centerX" id="UfN-xw-c4x"/>
+                            <constraint firstItem="YvR-B5-HOj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="50" id="gHs-hV-Yah"/>
+                            <constraint firstAttribute="centerY" secondItem="Zoe-hj-5MM" secondAttribute="centerY" id="jc7-LV-9LP"/>
+                        </constraints>
+                        <variation key="widthClass=compact"/>
+                        <variation key="widthClass=regular"/>
+                        <variation key="heightClass=compact-widthClass=compact"/>
+                        <variation key="heightClass=regular-widthClass=compact"/>
                     </view>
                     <connections>
                         <outlet property="result" destination="5uJ-P6-UIT" id="TeN-e0-WG1"/>
