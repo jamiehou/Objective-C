@@ -85,6 +85,12 @@
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wko-9m-17d">
                                 <rect key="frame" x="506" y="458" width="51" height="49"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="305" y="460" width="51" height="49"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="705" y="610" width="51" height="49"/>
+                                </variation>
                                 <connections>
                                     <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="6Oe-FL-AyV"/>
                                 </connections>
@@ -117,12 +123,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LYe-Vc-Jwl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="4gG-LQ-lNo"/>
+                            <constraint firstItem="LYe-Vc-Jwl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="4gG-LQ-lNo">
+                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                            </constraint>
                             <constraint firstItem="Wko-9m-17d" firstAttribute="leading" secondItem="UA6-zW-P7D" secondAttribute="trailing" constant="50" id="56T-uq-OTZ"/>
                             <constraint firstItem="AdJ-Zq-Hwd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="6ja-Oc-Lab"/>
                             <constraint firstItem="xjs-bi-H6T" firstAttribute="width" secondItem="mj1-UN-ssP" secondAttribute="width" id="8Lt-hj-vlU"/>
                             <constraint firstAttribute="centerX" secondItem="LYe-Vc-Jwl" secondAttribute="centerX" id="8vr-Zm-Pje"/>
-                            <constraint firstItem="1Xf-hI-taE" firstAttribute="top" secondItem="d6O-nk-9Cm" secondAttribute="bottom" constant="30" id="9fP-JC-yLT"/>
+                            <constraint firstItem="1Xf-hI-taE" firstAttribute="top" secondItem="d6O-nk-9Cm" secondAttribute="bottom" constant="30" id="9fP-JC-yLT">
+                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                            </constraint>
                             <constraint firstItem="1Xf-hI-taE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="9tm-AU-cZR"/>
                             <constraint firstItem="cv3-QC-HdT" firstAttribute="centerY" secondItem="mj1-UN-ssP" secondAttribute="centerY" id="DGy-uO-jV0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Wko-9m-17d" secondAttribute="trailing" constant="30" id="Hb3-5A-ioc"/>
@@ -131,7 +141,9 @@
                             <constraint firstAttribute="centerX" secondItem="1Xf-hI-taE" secondAttribute="centerX" id="KCL-4J-PJy"/>
                             <constraint firstAttribute="centerX" secondItem="UA6-zW-P7D" secondAttribute="centerX" id="NSg-tt-XfX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ShW-vB-AkI" secondAttribute="trailing" constant="20" id="OiU-uO-Zbt"/>
-                            <constraint firstItem="Wko-9m-17d" firstAttribute="top" secondItem="1Xf-hI-taE" secondAttribute="bottom" constant="30" id="Otx-gj-aGW"/>
+                            <constraint firstItem="Wko-9m-17d" firstAttribute="top" secondItem="1Xf-hI-taE" secondAttribute="bottom" constant="30" id="Otx-gj-aGW">
+                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                            </constraint>
                             <constraint firstItem="664-84-r4J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="QH6-KF-n3z"/>
                             <constraint firstAttribute="trailingMargin" secondItem="d6O-nk-9Cm" secondAttribute="trailing" constant="20" id="QsE-7V-hiY"/>
                             <constraint firstItem="Wko-9m-17d" firstAttribute="top" secondItem="d6O-nk-9Cm" secondAttribute="bottom" constant="30" id="SCa-7C-ixr"/>
@@ -141,15 +153,23 @@
                             <constraint firstItem="ShW-vB-AkI" firstAttribute="centerY" secondItem="xjs-bi-H6T" secondAttribute="centerY" id="aYw-lE-6dW"/>
                             <constraint firstItem="mj1-UN-ssP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="bby-GU-NFi"/>
                             <constraint firstItem="ShW-vB-AkI" firstAttribute="width" secondItem="cv3-QC-HdT" secondAttribute="width" id="cV3-P7-MqA"/>
-                            <constraint firstItem="UA6-zW-P7D" firstAttribute="top" secondItem="1Xf-hI-taE" secondAttribute="bottom" constant="30" id="csR-l3-rza"/>
+                            <constraint firstItem="UA6-zW-P7D" firstAttribute="top" secondItem="1Xf-hI-taE" secondAttribute="bottom" constant="30" id="csR-l3-rza">
+                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                            </constraint>
                             <constraint firstItem="ShW-vB-AkI" firstAttribute="height" secondItem="xjs-bi-H6T" secondAttribute="height" id="fnq-1c-SeP"/>
-                            <constraint firstItem="d6O-nk-9Cm" firstAttribute="top" secondItem="ShW-vB-AkI" secondAttribute="bottom" constant="30" id="iZ1-Hb-bPY"/>
+                            <constraint firstItem="d6O-nk-9Cm" firstAttribute="top" secondItem="ShW-vB-AkI" secondAttribute="bottom" constant="30" id="iZ1-Hb-bPY">
+                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                            </constraint>
                             <constraint firstItem="cv3-QC-HdT" firstAttribute="height" secondItem="mj1-UN-ssP" secondAttribute="height" id="jO3-oY-Whn"/>
-                            <constraint firstItem="cv3-QC-HdT" firstAttribute="top" secondItem="LYe-Vc-Jwl" secondAttribute="bottom" constant="50" id="mH3-4Z-T2b"/>
+                            <constraint firstItem="cv3-QC-HdT" firstAttribute="top" secondItem="LYe-Vc-Jwl" secondAttribute="bottom" constant="50" id="mH3-4Z-T2b">
+                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                            </constraint>
                             <constraint firstItem="xjs-bi-H6T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="mIN-HV-zML"/>
                             <constraint firstItem="d6O-nk-9Cm" firstAttribute="centerY" secondItem="AdJ-Zq-Hwd" secondAttribute="centerY" id="qEm-rZ-v3f"/>
                             <constraint firstItem="664-84-r4J" firstAttribute="centerY" secondItem="Wko-9m-17d" secondAttribute="centerY" id="sM9-Bm-vhF"/>
-                            <constraint firstItem="ShW-vB-AkI" firstAttribute="top" secondItem="cv3-QC-HdT" secondAttribute="bottom" constant="30" id="sz6-f3-ujS"/>
+                            <constraint firstItem="ShW-vB-AkI" firstAttribute="top" secondItem="cv3-QC-HdT" secondAttribute="bottom" constant="30" id="sz6-f3-ujS">
+                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                            </constraint>
                             <constraint firstItem="ShW-vB-AkI" firstAttribute="width" secondItem="d6O-nk-9Cm" secondAttribute="width" id="tB6-rf-qoT"/>
                             <constraint firstItem="UA6-zW-P7D" firstAttribute="top" secondItem="d6O-nk-9Cm" secondAttribute="bottom" constant="30" id="vRt-jQ-i4u"/>
                             <constraint firstItem="664-84-r4J" firstAttribute="centerY" secondItem="UA6-zW-P7D" secondAttribute="centerY" id="wDS-h9-5UB"/>
