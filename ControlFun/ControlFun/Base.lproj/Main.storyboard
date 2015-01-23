@@ -120,6 +120,15 @@
                                     <action selector="toggleControls:" destination="BYZ-38-t0r" eventType="valueChanged" id="afu-gJ-wbo"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X81-Zq-YFB">
+                                <rect key="frame" x="277" y="545" width="51" height="30"/>
+                                <state key="normal" title="Go 2nd">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BzP-sV-tT7" kind="presentation" id="aSz-0l-saE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -147,6 +156,7 @@
                             <constraint firstItem="664-84-r4J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="QH6-KF-n3z"/>
                             <constraint firstAttribute="trailingMargin" secondItem="d6O-nk-9Cm" secondAttribute="trailing" constant="20" id="QsE-7V-hiY"/>
                             <constraint firstItem="Wko-9m-17d" firstAttribute="top" secondItem="d6O-nk-9Cm" secondAttribute="bottom" constant="30" id="SCa-7C-ixr"/>
+                            <constraint firstAttribute="centerX" secondItem="X81-Zq-YFB" secondAttribute="centerX" id="Sw0-tB-S7o"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cv3-QC-HdT" secondAttribute="trailing" constant="20" id="Ucu-WI-QD4"/>
                             <constraint firstItem="ShW-vB-AkI" firstAttribute="leading" secondItem="xjs-bi-H6T" secondAttribute="trailing" constant="5" id="Zeg-dt-olC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1Xf-hI-taE" secondAttribute="trailing" constant="60" id="aSg-CA-gGE"/>
@@ -156,6 +166,7 @@
                             <constraint firstItem="UA6-zW-P7D" firstAttribute="top" secondItem="1Xf-hI-taE" secondAttribute="bottom" constant="30" id="csR-l3-rza">
                                 <variation key="heightClass=regular-widthClass=regular" constant="50"/>
                             </constraint>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="X81-Zq-YFB" secondAttribute="bottom" constant="50" id="dts-dq-acb"/>
                             <constraint firstItem="ShW-vB-AkI" firstAttribute="height" secondItem="xjs-bi-H6T" secondAttribute="height" id="fnq-1c-SeP"/>
                             <constraint firstItem="d6O-nk-9Cm" firstAttribute="top" secondItem="ShW-vB-AkI" secondAttribute="bottom" constant="30" id="iZ1-Hb-bPY">
                                 <variation key="heightClass=regular-widthClass=regular" constant="50"/>
@@ -198,6 +209,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="jdZ-jC-iD2">
+            <objects>
+                <viewController id="BzP-sV-tT7" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f9q-3R-dOg"/>
+                        <viewControllerLayoutGuide type="bottom" id="dC8-mz-yWO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jmM-pj-3m0" customClass="Secon">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello, 2nd page is here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFu-aF-YsV">
+                                <rect key="frame" x="212" y="238" width="177" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="NFu-aF-YsV" secondAttribute="centerY" id="WIb-bi-4MG"/>
+                            <constraint firstAttribute="centerX" secondItem="NFu-aF-YsV" secondAttribute="centerX" id="o8u-FY-ed7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gZo-Mr-F9Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="987" y="362"/>
         </scene>
     </scenes>
     <resources>

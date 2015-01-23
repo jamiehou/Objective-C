@@ -16,6 +16,7 @@
 		FAB314A61A6F85CA00FE8014 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB314A41A6F85CA00FE8014 /* LaunchScreen.xib */; };
 		FAB314B21A6F85CA00FE8014 /* ControlFunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB314B11A6F85CA00FE8014 /* ControlFunTests.m */; };
 		FAB314BC1A6F86BB00FE8014 /* control.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB314BB1A6F86BB00FE8014 /* control.png */; };
+		FAB314BF1A7232A600FE8014 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB314BE1A7232A600FE8014 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		FAB314B01A6F85CA00FE8014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAB314B11A6F85CA00FE8014 /* ControlFunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ControlFunTests.m; sourceTree = "<group>"; };
 		FAB314BB1A6F86BB00FE8014 /* control.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = control.png; sourceTree = "<group>"; };
+		FAB314BD1A7232A600FE8014 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		FAB314BE1A7232A600FE8014 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				FAB314A21A6F85CA00FE8014 /* Images.xcassets */,
 				FAB314A41A6F85CA00FE8014 /* LaunchScreen.xib */,
 				FAB314951A6F85CA00FE8014 /* Supporting Files */,
+				FAB314BD1A7232A600FE8014 /* SecondViewController.h */,
+				FAB314BE1A7232A600FE8014 /* SecondViewController.m */,
 			);
 			path = ControlFun;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB314BF1A7232A600FE8014 /* SecondViewController.m in Sources */,
 				FAB3149E1A6F85CA00FE8014 /* ViewController.m in Sources */,
 				FAB3149B1A6F85CA00FE8014 /* AppDelegate.m in Sources */,
 				FAB314981A6F85CA00FE8014 /* main.m in Sources */,
@@ -288,7 +294,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wally Wang (X3XY3T7DX3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wally Wang (X3XY3T7DX3)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -308,6 +315,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "b33a40b0-2ba8-45c6-8af0-9f18e525f213";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -330,7 +338,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Global Bay Mobile Technologies, Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Global Bay Mobile Technologies, Inc.";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -343,6 +352,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "66aad9e3-b38c-47d6-b2c1-380f35e7df2b";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -353,9 +363,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wally Wang (X3XY3T7DX3)";
 				INFOPLIST_FILE = ControlFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b33a40b0-2ba8-45c6-8af0-9f18e525f213";
 			};
 			name = Debug;
 		};
@@ -363,9 +375,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Global Bay Mobile Technologies, Inc.";
 				INFOPLIST_FILE = ControlFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "66aad9e3-b38c-47d6-b2c1-380f35e7df2b";
 			};
 			name = Release;
 		};
