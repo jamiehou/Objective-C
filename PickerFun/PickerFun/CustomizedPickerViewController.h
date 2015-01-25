@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CustomizedPickerViewController : UIViewController
+@interface CustomizedPickerViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UILabel *resultLabel;
+@property (weak, nonatomic) IBOutlet UIPickerView *picker;
+@property (strong, nonatomic) NSArray *column1;
+@property (strong, nonatomic) NSArray *column2;
+@property (strong, nonatomic) NSArray *column3;
+@property (strong, nonatomic) NSArray *column4;
+@property (strong, nonatomic) NSArray *column5;
+
+- (IBAction)buttonPressed:(id)sender;
 @end

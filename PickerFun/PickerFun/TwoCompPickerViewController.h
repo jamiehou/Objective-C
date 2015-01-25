@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TwoCompPickerViewController : UIViewController
+#define kBreadComponent   0
+#define kFillingComponent 1
 
+@interface TwoCompPickerViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIPickerView *picker;
+@property (strong, nonatomic) NSArray *breadTypes;
+@property (strong, nonatomic) NSArray *fillingTypes;
+
+- (IBAction)buttonPressed:(id)sender;
 @end

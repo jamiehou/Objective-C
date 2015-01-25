@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DependentCompPickerViewController : UIViewController
+#define kStateComponent 0
+#define kZipComponent   1
 
+@interface DependentCompPickerViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIPickerView *picker;
+@property (strong, nonatomic) NSDictionary *stateZips;
+@property (strong, nonatomic) NSArray *states;
+@property (strong, nonatomic) NSArray *zips;
+
+- (IBAction)buttonPressed:(id)sender;
 @end
