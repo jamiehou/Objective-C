@@ -259,6 +259,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Customized" image="customized_small" id="PkG-sx-Q3e"/>
                     <connections>
+                        <outlet property="button" destination="uHw-pq-p1S" id="4kU-Xi-J67"/>
                         <outlet property="picker" destination="xYt-d8-saN" id="Jw8-Wb-vQO"/>
                         <outlet property="resultLabel" destination="tZD-9u-rzk" id="BBh-CF-UiU"/>
                     </connections>

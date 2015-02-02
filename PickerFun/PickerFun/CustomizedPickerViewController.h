@@ -17,6 +17,7 @@
 @property (strong, nonatomic) NSArray *column3;
 @property (strong, nonatomic) NSArray *column4;
 @property (strong, nonatomic) NSArray *column5;
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 - (IBAction)buttonPressed:(id)sender;
 @end

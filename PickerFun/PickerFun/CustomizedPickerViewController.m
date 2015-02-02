@@ -8,7 +8,10 @@
 
 #import "CustomizedPickerViewController.h"
 #import <AudioToolbox/AudioToolbox.h>
+<<<<<<< HEAD
 #import <Foundation/Foundation.h>
+=======
+>>>>>>> af7453dccbc78c4797cbf5762d2be786fed4a05e
 
 @interface CustomizedPickerViewController ()
 
@@ -75,12 +78,37 @@
     if (numInRow >= 3) {
       win = YES;
     }
+<<<<<<< HEAD
+=======
+    _button.hidden = YES;
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"crunch" ofType:@"wav"];
+    SystemSoundID soundId;
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:path], &soundId);
+    AudioServicesPlayAlertSound(soundId);
+    [_picker reloadAllComponents];
+    
+>>>>>>> af7453dccbc78c4797cbf5762d2be786fed4a05e
     if (win) {
-      _resultLabel.text = @"Win!";
+      [self performSelector:@selector(playWinSound) withObject:nil afterDelay:.5];
     } else {
-      _resultLabel.text = @"Why not try it again? :)";
+      [self performSelector:@selector(showButton) withObject:nil afterDelay:.5];
     }
+    
+    _resultLabel.text = @"";
   }
+}
+
+- (void)showButton {
+  _button.hidden = NO;
+}
+
+- (void)playWinSound {
+  NSURL *url = [[NSBundle mainBundle] URLForResource:@"win" withExtension:@"wav"];
+  SystemSoundID soundId;
+  AudioServicesCreateSystemSoundID((__bridge CFURLRef)url, &soundId);
+  AudioServicesPlaySystemSound(soundId);
+  _resultLabel.text = @"WINNING";
+  [self performSelector:@selector(showButton) withObject:nil afterDelay:1.5];
 }
 
 #pragma mark - Picker view methods
