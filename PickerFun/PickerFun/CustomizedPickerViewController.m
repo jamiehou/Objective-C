@@ -7,6 +7,8 @@
 //
 
 #import "CustomizedPickerViewController.h"
+#import <AudioToolbox/AudioToolbox.h>
+#import <Foundation/Foundation.h>
 
 @interface CustomizedPickerViewController ()
 
@@ -69,10 +71,10 @@
     }
     lastVal = newVal;
     [_picker selectRow:newVal inComponent:i animated:YES];
+    [_picker reloadComponent:i];
     if (numInRow >= 3) {
       win = YES;
     }
-    [_picker reloadAllComponents];
     if (win) {
       _resultLabel.text = @"Win!";
     } else {
@@ -95,4 +97,9 @@
   NSArray *array = [self valueForKey:arrayName];
   return  [array objectAtIndex:row];
 }
+
+- (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component {
+  return 50.0;
+}
+
 @end
