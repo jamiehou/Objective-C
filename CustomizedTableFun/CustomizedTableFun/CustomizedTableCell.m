@@ -31,6 +31,7 @@
   if (![state isEqualToString:_state]) {
     _state = [state copy];
     _stateLabel.text = _state;
+
   }
 }
 
