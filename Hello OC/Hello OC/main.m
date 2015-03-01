@@ -30,7 +30,6 @@ void testBOOL() {
 }
 
 void testFileIndrection() {
-  
   FILE *file = fopen("/tmp/names.rtf", "r");
   char word[100];
   while (fgets(word, 100, file)) {

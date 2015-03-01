@@ -223,19 +223,27 @@
                                     <action selector="buttonPressed:" destination="Ygw-R2-x2j" eventType="touchUpInside" id="0yY-ya-Ubb"/>
                                 </connections>
                             </button>
-                            <pickerView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xYt-d8-saN">
-                                <rect key="frame" x="0.0" y="28" width="600" height="162"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="Ygw-R2-x2j" id="zRr-bS-CeE"/>
-                                    <outlet property="delegate" destination="Ygw-R2-x2j" id="zkq-H4-WOq"/>
-                                </connections>
-                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZD-9u-rzk">
                                 <rect key="frame" x="279" y="260" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.22433676494377752" blue="0.51950862893812066" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xYt-d8-saN">
+                                <rect key="frame" x="0.0" y="28" width="600" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="1wS-YY-vXz"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1wS-YY-vXz"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ygw-R2-x2j" id="zRr-bS-CeE"/>
+                                    <outlet property="delegate" destination="Ygw-R2-x2j" id="zkq-H4-WOq"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -280,7 +288,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-21" y="2"/>
         </scene>
     </scenes>
     <resources>

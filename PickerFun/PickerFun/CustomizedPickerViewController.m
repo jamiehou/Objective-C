@@ -8,6 +8,10 @@
 
 #import "CustomizedPickerViewController.h"
 #import <AudioToolbox/AudioToolbox.h>
+<<<<<<< HEAD
+#import <Foundation/Foundation.h>
+=======
+>>>>>>> af7453dccbc78c4797cbf5762d2be786fed4a05e
 
 @interface CustomizedPickerViewController ()
 
@@ -70,9 +74,12 @@
     }
     lastVal = newVal;
     [_picker selectRow:newVal inComponent:i animated:YES];
+    [_picker reloadComponent:i];
     if (numInRow >= 3) {
       win = YES;
     }
+<<<<<<< HEAD
+=======
     _button.hidden = YES;
     NSString *path = [[NSBundle mainBundle] pathForResource:@"crunch" ofType:@"wav"];
     SystemSoundID soundId;
@@ -80,6 +87,7 @@
     AudioServicesPlayAlertSound(soundId);
     [_picker reloadAllComponents];
     
+>>>>>>> af7453dccbc78c4797cbf5762d2be786fed4a05e
     if (win) {
       [self performSelector:@selector(playWinSound) withObject:nil afterDelay:.5];
     } else {
@@ -117,4 +125,9 @@
   NSArray *array = [self valueForKey:arrayName];
   return  [array objectAtIndex:row];
 }
+
+- (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component {
+  return 50.0;
+}
+
 @end
